@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>3D植物叶片形变研究与实现</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+		<link rel="stylesheet" href="main.css" />
+		<link rel="stylesheet" type="text/css" href="src/loadingBar/loading-bar.css" />
+	</head>
+
+	<body>
+		<div id="viewer">
+			<h1>3D植物叶片形变研究与实现</h1>
+		</div>
+		<script type="text/javascript" src="src/loadingBar/loading-bar.js"></script>
+		<script src="jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="module">
+			import { LJBasicViewerInterface } from '../build/LJBasicViewerInterface.js'
+			let test = new LJBasicViewerInterface('viewer')
+			test.addToScene('../model/leaf.glb')
+		</script>
+	</body>
+</html>
